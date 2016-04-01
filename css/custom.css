@@ -88,7 +88,7 @@ nav ul li{
     font-size: 30pt;
     color: white;
     width: 100%;
-    margin-top: 12%
+    margin-top: 20%
 }
 
 .banner h4{
@@ -103,7 +103,17 @@ nav ul li{
     font-size: 13pt
 }
     
-
+    .ideia {
+        margin-top: 5%;
+    }
+    
+    .bg-ex{
+        background-image: url(../img/image04.jpg);
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 50vh
+    }
 
 /* acaba banner */
 
