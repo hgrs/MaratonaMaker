@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Maratona Maker</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/mm.png" />
+  <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+
+
+
+</head>
+<body>
+ 
+ <!-- começa menu -->
+ <ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!" style="color: #0071c5">Edição Especial: Semana da Mulher</a></li>
+  
+</ul>
+ 
+   <nav class="white" role="navigation" style=" z-index:9999">
+    <div class="nav-wrapper">
+      <ul class=" hide-on-med-and-down" id="lista_menu">
+        <li><a href="index.html#home" onclick="mostrarAtivo(this);"> A MARATONA</a></li>
+        <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#makerday" data-activates="dropdown1" onclick="mostrarAtivo(this);">MAKERDAYS<i class="material-icons right">arrow_drop_down</i></a></li>
+         <li ><a href="index.html#movMaker" onclick="mostrarAtivo(this);">MOVIMENTO MAKER</a></li>
+         <li ><a href="index.html#home" class="imgLogo"><img src="img/logo.png" class="logo"></a> </li>
+         <li><a href="index.html#tutorial" onclick="mostrarAtivo(this);">TUTORIAL</a></li>
+         <li><a href="index.html#regulamento" onclick="mostrarAtivo(this);">REGULAMENTO</a></li>     
+         <li><a href="http://goo.gl/forms/pUWqCtA14C" target="_blank">MANDE SUA IDEIA</a></li>     
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html#home"> A MARATONA</a></li>
+        <li><a href="index.html#makerday"> MAKERDAYS</a></li>
+        <li><a href="makerday.html" style="text-size:9pt">Edição Especial</a></li>
+         <li><a href="index.html#movMaker">MOVIMENTO MAKER</a></li>
+         <li><a href="index.html#tutorial">TUTORIAL</a></li>
+         <li><a href="index.html#regulamento">REGULAMENTO</a></li>
+         <li><a href="http://goo.gl/forms/pUWqCtA14C" target="_blank">MANDE SUA IDEIA</a></li>  
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+  
+  
+
+
+
+ <!-- acaba menu -->
+ 
+  
+
+   <!-- começa quem usa -->
+  
+    <section id="movMaker">
+        <div class="container">
+      <!--   Icon Section   -->
+        
+           <div class="row white-text">
+            
+            <div class="col l12">
+             <h2 style="margin-top:15%">Edição Especial: Semana da Mulher</h2>
+             
+             <h5>Fizemos uma edição especial para comemorar a Semana do dia da Mulher. Reunimos na sede da Intel 40 meninas da Comunidade de Paraisópolis para aprender sobre Internet das Coisas utilizando arquitetura Intel.</h5>
+             
+             <p>Essas são algumas das apresentações dos projetos feitos pelas meninas que deram um show criando soluções inovadores para problemas reais vividos por elas e pela comunidade!</p>
+             
+            
+            <div class="card">
+                <div class="card-content" style="background-image: url(img/image01.jpg); height: 60vh; background-size: cover; margin-top: 5%">
+                </div>
+              </div>
+            <p>Equipe criou um sensor que avisa os residentes do imóvel caso haja possibilidade de chuvas fortes, tempestades e desabamentos evitando muitas tragédias.</p>
+            
+            <div class="card">
+                <div class="card-content" style="background-image: url(img/image03.jpg); height: 60vh; background-size: cover; margin-top: 5%">
+                </div>
+              </div>
+            
+            <div class="card">
+                <div class="card-content" style="background-image: url(img/image04.jpg); height: 60vh; background-size: cover; margin-top: 5%">
+                </div>
+              </div>
+            <p>Aprendendo o que é Internet das coisas e como utilizar a arquitetura Intel para criar soluções inovadoras!</p>
+            
+           
+           <div class="card">
+                <div class="card-content" style="background-image: url(img/image02.jpg); height: 60vh; background-size: cover; margin-top: 5%">
+                </div>
+              </div>
+            <p>Foto da ganhadora Milena</p>
+            
+            </div>
+
+          </div>
+        </div>
+  </section>
+   
+   
+
+ <!-- =========================
+             FOOTER
+        ============================== -->
+        <footer>
+            <div class="container">
+               
+               <div class="row">
+            
+            <div class="col l12">
+              <!-- Copy -->
+                   <center>
+                    <div>
+                        <p style="float:left">Todos os direitos reservados - Copyright © 2016 <a href="http://ponte21.com" target="_blank"  style="color: rgba(0,60,113,1);">Ponte21</a></p>
+                        
+                        <p class="mt">Apoio: <a href="http://www.mastertech.tech" target="_blank"  style="color: rgba(0,60,113,1);">MasterTech</a></p>
+                    </div>
+                    </center>
+            </div>
+
+          </div>
+               
+            </div><!-- /End Container -->
+        </footer>
+
+ 
+ 
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/sroll.js"></script>
+
+    <script>
+$(document).ready(function() {
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+</script>
+ 
+  </body>
+</html>

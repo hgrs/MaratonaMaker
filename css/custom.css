@@ -1,0 +1,395 @@
+@font-face {
+	font-family: "MuseoSans";
+	src: url(../font/MuseoSans_100.otf); 
+    src: url(../font/MuseoSans_300.otf); 
+    src: url(../font/MuseoSans_500.otf); 
+	}
+
+.button-collapse{
+    color: #0071c5;
+    margin-left: 15px;
+}
+
+body{
+  background: linear-gradient(to right, #003c71, #0071c5); /* Standard syntax */
+    font-family: "MuseoSans", sans-serif;
+}
+
+ /* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0071c5;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    background: #003c71; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,60,113,0.4); 
+}  
+
+@media (min-width: 800px) {
+.card{
+    background: #1e39a8;
+}
+
+/* acaba geral */
+
+    .logo{
+        max-width: 230px;
+        background: white;
+        padding: 15px;
+        border-radius: 45px
+    }
+    
+   nav ul .imgLogo:hover{
+        background: transparent;
+    }
+    
+    
+nav {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+}
+
+nav ul{
+    display: block;
+    width: auto;
+    margin-left: 7%
+}
+
+nav ul li{
+    font-size: 10pt;
+}
+
+/* acaba nav */
+
+.parallax-container{
+    background-image: url(../img/foto-bg-azul-efeito.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 110vh
+}
+
+.banner div{
+    margin-left: 5%;
+}
+
+.banner h1{
+    text-transform: uppercase;
+    font-size: 30pt;
+    color: white;
+    width: 100%;
+    margin-top: 12%
+}
+
+.banner h4{
+    font-size: 15pt;
+}
+.banner h4,p{
+    color: white;
+}
+
+.banner p{
+    margin-bottom: 5%;
+    font-size: 13pt
+}
+    
+
+
+/* acaba banner */
+
+section#movMaker {
+    width: 100%;
+    height: 100vh;
+}
+
+
+#movMaker h2{
+    margin: 5% 0 7% 0;
+    font-size: 30pt;
+}
+
+#movMaker h4{
+    margin: 3% 0;
+    font-size: 16pt;
+    font-weight: 500;
+}
+
+#movMaker p{
+    font-size: 13pt;
+}
+
+#movMaker img{
+    margin-top: 8%;
+    max-width: 100%;
+    padding-bottom: 5%;
+}
+
+
+/* acaba movMaker */
+
+section#tutorial {
+    width: 100%;
+    height: 80vh;
+}
+
+#tutorial h2{
+    margin: 10% 0 7% 0;
+    font-size: 30pt;
+}
+
+#tutorial p{
+    font-size: 13pt;
+    margin: 3% 0;
+}
+
+.assistir {
+    background: #0071c5; 
+    width: 25%;
+    margin-bottom: 5%;
+}
+/* acaba tutorial */
+
+section#makerday {
+    width: 100%;
+    height: 100vh;
+}
+
+#makerday h2{
+    margin: 15% 0 7% 0;
+    font-size: 30pt;
+}
+
+
+#makerday p{
+    font-size: 13pt;
+    margin: 7% 0;
+}
+
+.girl{
+    background-image: url(../img/makerday.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    
+}
+
+.maker{
+    height: 50vh;
+}
+/* acaba makerday */
+
+section#regulamento {
+    width: 100%;
+    height: 95vh;
+}
+
+#regulamento h2{
+    margin: 15% 0 7% 0;
+    font-size: 30pt;
+    color: white;
+}
+
+.reg {
+    height: 60vh;
+}
+#regulamento iframe {
+    width: 100%;
+    height: 50vh;
+    border: none;
+}
+    
+    footer .mt{
+        float:right
+    }
+/* acaba regulamento */
+    
+    #modal2{
+        width:100vh; height: 90%; margin-top: 4%
+}
+
+    .logoMobile{
+        display: none;
+    }
+    
+   
+}
+
+
+
+
+
+
+
+
+@media (max-width: 770px) {
+    
+    .brand-logo{
+        max-width: 120px;
+    }
+    
+.card{
+    background: #1e39a8;
+    height: 6ovh;
+}
+
+/* acaba geral */
+
+.nav-wrapper {
+    width: 100%;
+    height: 15%;
+}
+    
+    nav {
+        position: fixed;
+    }
+
+
+/* acaba nav */
+
+.parallax-container{
+    background-image: url(../img/foto-bg-azul-efeito.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 140vh;
+}
+
+.banner > div{
+    margin-left: 5%;
+    margin-top: 30%;
+    height: 120vh;
+}
+
+.banner h1{
+    text-transform: uppercase;
+    font-size: 13pt;
+    color: white;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.banner h4{
+    font-size: 10pt;
+}
+.banner h4,p{
+    color: white;
+    font-size: 10pt;
+}
+
+    .apoio{
+        margin-top: -15%
+    }
+
+
+   
+/* acaba banner */
+
+section#movMaker {
+    width: 100%;
+    height: 100vh;
+}
+
+
+#movMaker h2{
+    margin: 15% 0;
+    font-size: 20pt;
+}
+
+#movMaker h4{
+    margin: 3% 0;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+#movMaker p{
+    font-size: 11pt;
+}
+
+#movMaker img{
+    margin-top: 8%;
+    max-width: 100%;
+    padding-bottom: 5%;
+}
+
+
+/* acaba movMaker */
+
+section#tutorial {
+    width: 100%;
+    height: 100vh;
+}
+
+#tutorial h2{
+    margin: 15% 0;
+    font-size: 20pt;
+}
+
+#tutorial p{
+    font-size: 11pt;
+    margin: 3% 0;
+}
+
+.assistir {
+    background: #0071c5; 
+    width: 80%;
+    margin-bottom: 5%;
+}
+/* acaba tutorial */
+
+section#makerday {
+    width: 100%;
+    height: 100vh;
+}
+
+#makerday h2{
+    margin: 15% 0;
+    font-size: 20pt;
+}
+
+
+#makerday p{
+    font-size: 11pt;
+    margin: 7% 0;
+}
+
+.girl{
+    background-image: url(../img/makerday.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    
+}
+
+.maker{
+    height: 50vh;
+}
+/* acaba makerday */
+
+section#regulamento {
+    width: 100%;
+    height: 50vh;
+}
+
+#regulamento h2{
+    margin: 15% 0;
+    font-size: 20pt;
+    color: white;
+}
+
+.reg {
+    display: none;
+    
+}
+    
+
+/* acaba regulamento */
+}
