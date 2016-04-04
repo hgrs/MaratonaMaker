@@ -114,6 +114,8 @@ nav ul li{
         width: auto;
         height: 50vh
     }
+    
+    
 
 /* acaba banner */
 
@@ -270,7 +272,7 @@ section#regulamento {
     background-image: url(../img/foto-bg-azul-efeito.jpg);
     background-position: center;
     background-size: cover;
-    height: 140vh;
+    height: 130vh;
 }
 
 .banner > div{
