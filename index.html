@@ -1,330 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Maratona Maker</title>
-  <meta name="description" content="Crie soluções inovadoras que podem transformar sua comunidade utilizando Internet das Coisas e Arquitetura Intel. Você aluno do Ensino Fundamental e Médio forme grupos de 3 a 5 pessoas e vamos criar!">
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="img/mm.png" />
-  <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
-
- <script>   
-   function mostrarAtivo(tag){
-   var tag_li = document.getElementById('lista_menu');
-   var tag_a = tag_li.getElementsByTagName('a');
-   for (i=0; i<tag_a.length; i++ )
-   {
-      tag_a[i].style.borderBottom = "";
-   }
-      tag.style.borderBottom = "5px solid #0071c5";
-   }
-     
-        
-        
-</script>
-
-</head>
-<body>
- 
- <!-- começa menu -->
- <ul id="dropdown1" class="dropdown-content">
-  <li><a href="makerday.html" style="color: #0071c5">Edição Especial: Semana da Mulher</a></li>
-  
-</ul>
-
-
- 
-  <nav class="white" role="navigation" style=" z-index:9999">
-   
-    <div class="nav-wrapper">
-     
-    <div class="logoMobile"> <img src="img/logo.png" class="brand-logo" style="margin-top:7px"> </div>
-     
-     
-      <ul class=" hide-on-med-and-down" id="lista_menu">
-        <li><a href="#home" onclick="mostrarAtivo(this);"> A MARATONA</a></li>
-        <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#makerday" data-activates="dropdown1" onclick="mostrarAtivo(this);">MAKERDAYS<i class="material-icons right">arrow_drop_down</i></a></li>
-         <li ><a href="#movMaker" onclick="mostrarAtivo(this);">MOVIMENTO MAKER</a></li>
-         <li ><a href="#home" class="imgLogo"><img src="img/logo.png" class="logo"></a> </li>
-         <li><a href="#tutorial" onclick="mostrarAtivo(this);">TUTORIAL</a></li>
-         <li><a href="#regulamento" onclick="mostrarAtivo(this);">REGULAMENTO</a></li>     
-         <li><a href="http://goo.gl/forms/pUWqCtA14C" target="_blank">MANDE SUA IDEIA</a></li>     
-      </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#home"> A MARATONA</a></li>
-        <li><a href="#makerday"> MAKERDAYS</a></li>
-        <li><a href="makerday.html" style="text-size:9pt">Edição Especial</a></li>
-         <li><a href="#movMaker">MOVIMENTO MAKER</a></li>
-         <li><a href="#tutorial">TUTORIAL</a></li>
-         <li><a href="#regulamento">REGULAMENTO</a></li>
-         <li><a href="http://goo.gl/forms/pUWqCtA14C" target="_blank">MANDE SUA IDEIA</a></li>  
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  
-  
-
-
-
- <!-- acaba menu -->
- 
-  <!-- começa banner -->
-  
-  <div id="index-banner" class="parallax-container" >
-    <div class="section" id="home">
-      <div class="container banner">
-      <div>
-      <h1 style="color: #0071c5;">VOCÊ ESTÁ MOTIVADO PARA FAZER A PRÓXIMA GRANDE COISA mas não sabe como?</h1>
-      <h4>VENHA FAZER PARTE DA MARATONA MAKER INTEL FORMANDO INOVADORES DO AMANHÃ!</h4>
-      <p>Uma série de oficinas que acontece durante todo o ano para promover o movimento maker, incentivar crianças e jovens a construir soluções para seus problemas diários com suas próprias mãos!</p>
-            
-       <center><a class="modal-trigger assistir waves-effect ideia waves-light btn" href="http://goo.gl/forms/pUWqCtA14C" style="background: #0071c5;" target="_blank">MANDE SUA IDEIA</a></center>
-        <div class="row">
-        <div class="col l9 m9 s12">
-      <p style="font-size: 10pt"> APOIO:</p>
-      <a href="http://www.mastertech.tech" target="_blank" ><img src="img/logo-mastertech.png" style="max-width:150px"> </a>
-      </div>
-      
-      <div class="col l3 m9 s12">
-      <p  style="font-size: 10pt"> INICIATIVA:</p>
-      <a href="http://www.intel.com.br/" target="_blank" ><img src="img/logointel.png" style="max-width:80px"> </a>
-      </div>
-          </div>
-      </div>
-      
-      </div>
-      <!-- Modal Structure -->
-    </div>
-  </div>
-
-   <section id="" style="background:white">
-      <!--   Icon Section   -->
-        
-           <div class="row">
-            
-            <div class="col l6 m12 s12 bg-ex"> </div>
-            
-            <div class="col l6 m12 s12 ">
-            <p style="color: #0071c5; padding: 5%">Crie soluções inovadoras que podem transformar sua comunidade utilizando Internet das Coisas e Arquitetura Intel. <br/>Você aluno do Ensino Fundamental e Médio forme grupos de 3 a 5 pessoas e vamos criar!<br/>Não sabe como nem por onde começar?<br/>Assista o tutorial e veja como ter ideias e criar seu próprio projeto!</p>
-             
+<html lang="pt-br">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <title>Maratona Maker</title>
+      <meta name="description" content="Crie soluções inovadoras que podem transformar sua comunidade utilizando Internet das Coisas e Arquitetura Intel. Você aluno do Ensino Fundamental e Médio forme grupos de 3 a 5 pessoas e vamos criar!">
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="shortcut icon" href="img/mm.png" />
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+      <script>   
+         function mostrarAtivo(tag){
+         var tag_li = document.getElementById('lista_menu');
+         var tag_a = tag_li.getElementsByTagName('a');
+         for (i=0; i<tag_a.length; i++ )
+         {
+            tag_a[i].style.borderBottom = "";
+         }
+            tag.style.borderBottom = "5px solid #0071c5";
+         }
+          
+          
+              
+      </script>
+   </head>
+   <body>
+      <!-- começa menu
+      <ul id="dropdown1" class="dropdown-content">
+         <li><a href="makerday.html" style="color: #0071c5">Edição Especial: Semana da Mulher</a></li>
+      </ul> -->
+      <nav class="white" role="navigation" style=" z-index:9999">
+         <div class="nav-wrapper">
+            <div class="logoMobile"> <img src="img/logo.png" class="brand-logo" style="margin-top:7px"> </div>
+            <ul class=" hide-on-med-and-down" id="lista_menu">
+               <li><a href="#home" onclick="mostrarAtivo(this);"> A MARATONA</a></li>
+               <!-- Dropdown Trigger 
+               <li><a class="dropdown-button" href="#makerday" data-activates="dropdown1" onclick="mostrarAtivo(this);">MAKERDAYS<i class="material-icons right">arrow_drop_down</i></a></li>-->
+               <li ><a href="#makerday" onclick="mostrarAtivo(this);">MAKERDAYS</a></li>
+               <li ><a href="#movMaker" onclick="mostrarAtivo(this);">MOVIMENTO MAKER</a></li>
+               <li ><a href="#home" class="imgLogo"><img src="img/logo.png" class="logo"></a> </li>
+               <li><a href="#tutorial" onclick="mostrarAtivo(this);">TUTORIAL</a></li>
+               <!--<li><a href="#regulamento" onclick="mostrarAtivo(this);">REGULAMENTO</a></li>-->
+               <li><a href="http://goo.gl/forms/pUWqCtA14C" target="_blank">MANDE SUA IDEIA</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+               <li><a href="#home"> A MARATONA</a></li>
+               <li><a href="#makerday"> MAKERDAYS</a></li>
+               <li><a href="makerday.html" style="text-size:9pt">Edição Especial</a></li>
+               <li><a href="#movMaker">MOVIMENTO MAKER</a></li>
+               <li><a href="#tutorial">TUTORIAL</a></li>
+             <!--  <li><a href="#regulamento">REGULAMENTO</a></li>-->
+               <li><a href="http://goo.gl/forms/pUWqCtA14C" target="_blank">MANDE SUA IDEIA</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+         </div>
+      </nav>
+      <!-- acaba menu -->
+      <!-- começa banner -->
+      <div id="index-banner" class="parallax-container" >
+         <div class="section" id="home">
+            <div class="container banner">
+               <div>
+                  <h1 style="color: #0071c5;">VOCÊ ESTÁ MOTIVADO PARA FAZER A PRÓXIMA GRANDE COISA mas não sabe como?</h1>
+                  <h4>VENHA FAZER PARTE DA MARATONA MAKER INTEL FORMANDO INOVADORES DO AMANHÃ!</h4>
+                  <p >Crie soluções inovadoras que podem transformar sua comunidade utilizando Internet das Coisas e produtos Intel. <br/>Você aluno do Ensino Fundamental e Médio forme grupos de 3 a 5 pessoas e vamos criar!<br/>Não sabe como nem por onde começar?<br/>Assista o tutorial e veja como ter ideias e criar seu próprio projeto!</p>
+                  <center><a class="modal-trigger assistir waves-effect waves-light btn" href="http://goo.gl/forms/pUWqCtA14C" style="background: #0071c5;" target="_blank">MANDE SUA IDEIA</a></center>
+                  <div class="row">
+                     <div class="col l9 m9 s12">
+                        <p style="font-size: 10pt"> APOIO:</p>
+                        <a href="http://www.mastertech.tech" target="_blank" ><img src="img/logo-mastertech.png" style="max-width:150px"> </a>
+                     </div>
+                     <div class="col l3 m9 s12">
+                        <p  style="font-size: 10pt"> INICIATIVA:</p>
+                        <a href="http://www.intel.com.br/" target="_blank" ><img src="img/logointel.png" style="max-width:80px"> </a>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-          </div>
-  </section>
-  
-   <!-- acaba banner -->
-   <section id="makerday">
-        <div class="container">
-      <!--   Icon Section   -->
-        
+            <!-- Modal Structure -->
+         </div>
+      </div>
+      <!-- acaba banner -->
+      <section id="makerday">
+         <div class="container">
+            <!--   Icon Section   -->
             <div class="row white-text">
-                  <div class="col l12 ">
-                   <h2> MAKERDAYS</h2>
-                   <p>4 horas de muita interação e criatividade com oficinas que vão te ajudar a criar algo do zero,desde a idealização da ideia, criação de um protótipo até a execução do projeto.</p>
-                </div>
-                <div class="col l12 ">
-                 
-                   <div class="row">
-        <div class="col s12 l4">
-          <div class="card maker ">
-            <div class="card-content white-text">
-              <span class="card-title">Ideação</span>
-              <div class="divider"></div>
-              <p>COMO TER UMA IDEIA UTILIZANDO TÉCNICAS DE BRAINSTORMING E SELECIONAR AS MELHORES PARA SEREM DESENVOLVIDAS.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col s12 l4">
-          <div class="card maker ">
-            <div class="card-content white-text">
-              <span class="card-title">Programação</span>
-              <div class="divider"></div>
-              <p>HORA DE POR A MÃO NA MASSA E COLOCAR EM PRÁTICA A IDEIA DO SEU GRUPO UTILIZANDO LED, BUZINA, BOTÕES, SENSORES E MUITO MAIS!</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col s12 l4">
-          <div class="card maker ">
-            <div class="card-content white-text">
-              <span class="card-title">Pitch</span>
-              <div class="divider"></div>
-              <p>VOCÊ VAI APRENDER COMO APRESENTAR SEU PROJETO EM APENAS 2 MINUTOS!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-                 
+               <div class="col l12 ">
+                  <h2> MAKERDAYS</h2>
+                  <p>4 horas de muita interação e criatividade com oficinas que vão te ajudar a criar algo do zero,desde a idealização da ideia, criação de um protótipo até a execução do projeto.</p>
+               </div>
+               <div class="col l12 ">
+                  <div class="row">
+                     <div class="col s12 l4">
+                        <div class="card maker ">
+                           <div class="card-content white-text">
+                              <span class="card-title">Ideação</span>
+                              <div class="divider"></div>
+                              <p>COMO TER UMA IDEIA UTILIZANDO TÉCNICAS DE BRAINSTORMING E SELECIONAR AS MELHORES PARA SEREM DESENVOLVIDAS.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col s12 l4">
+                        <div class="card maker ">
+                           <div class="card-content white-text">
+                              <span class="card-title">Programação</span>
+                              <div class="divider"></div>
+                              <p>HORA DE POR A MÃO NA MASSA E COLOCAR EM PRÁTICA A IDEIA DO SEU GRUPO UTILIZANDO LED, BUZINA, BOTÕES, SENSORES E MUITO MAIS!</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col s12 l4">
+                        <div class="card maker ">
+                           <div class="card-content white-text">
+                              <span class="card-title">Pitch</span>
+                              <div class="divider"></div>
+                              <p>VOCÊ VAI APRENDER COMO APRESENTAR SEU PROJETO EM APENAS 2 MINUTOS!</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                   
-                </div>
-                
-                
-          </div>
-      
-        </div>
-  </section>
-   <!-- começa movMaker -->
-  
-    <section id="movMaker">
-        <div class="container">
-      <!--   Icon Section   -->
-        
-           <div class="row white-text">
-            
-            <div class="col l12 ">
-             <h2> MOVIMENTO MAKER</h2>
-              <div class="card">
-                <div class="card-content">
-                    <h4>A CULTURA QUE APROXIMA O PENSAR DO FAZER JÁ ESTÁ NO SEU COTIDIANO. TECNOLOGIA ESTIMULANDO A CRIATIVIDADE E O DESEJO DE SER INVENTOR!</h4>
-                    <p>Pessoas comuns como eu e você podem construir, consertar, modificar e fabricar os mais diversos tipos de objetos e projetos com suas próprias mãos.Nos envie suas ideias! As 50 melhores receberão MakerKits e com apoio de mentores farão seus protótipos se transformarem em projetos reais. Os 3 melhores grupos viajarão para São Paulo para a Grande Final.</p>
-                    <img src="img/campanha.png">
-                </div>
-
-              </div>
+                  <div class="col s12 l12">
+                        <div class="card maker ">
+                           <div class="card-content white-text">
+                              <span class="card-title">Edição especial: Dia das mulheres</span>
+                              <p>Fizemos uma edição especial para comemorar a Semana do dia da Mulher. Reunimos na sede da Intel 40 meninas da Comunidade de Paraisópolis para aprender sobre Internet das Coisas utilizando arquitetura Intel.</p>
+                              
+                              <center><a class="assistir waves-effect waves-light btn" href="makerday.html" style="background: #0071c5;" target="_self">CONFIRA!</a></center>
+                           </div>
+                        </div>
+                     </div>
+                     
+               </div>
             </div>
-
-          </div>
-        </div>
-  </section>
-   
-   
-
-   <!-- começa tutorial -->
-   <section id="tutorial">
-        <div class="container">
-      <!--   Icon Section   -->
-        
-           <div class="row white-text">
-            
-            <div class="col l12 ">
-             <h2> TUTORIAIS</h2>
-              <div class="card">
-                <div class="card-content">
-                    <p>Empoderar crianças e jovens a desenvolver ideias criativas que podem transformar sua realidade! Quer saber como? Assista aos tutoriais e saiba como participar!</p>
-                    
-                 <!-- Modal Trigger -->
- <center> <a class="modal-trigger assistir waves-effect waves-light btn" href="#modal2">ASSISTIR</a> </center>
-
-  <!-- Modal Structure -->
-  <div id="modal2" class="modal video" >
-    <div class="modal-content">
-     <figure id="video_player">
-  <div id="video_container">
-  <video controls poster="mm/2016-04-09.png">
-    <source src="video/01%20-%20Abertura.mp4" type="video/mp4" class="currentvid">
-    <img src="video/2016-04-09.png">
-</video>
-</div>
-<figcaption>
-  <a href="video/2.%20Internet%20das%20Coisas.mp4" >
-    <img src="video/2016-04-09.png">
-  </a>
-  <a href="video/3.%20Idea%C3%A7ao.mp4">
-    <img src="video/2016-04-09.png">
-  </a>
-  <a href="video/4.%20Prototipa%C3%A7%C3%A3o.mp4">
-    <img src="video/2016-04-09.png">
-  </a>
-  <a href="video/5.%20Viabilidade.mp4">
-    <img src="video/2016-04-09.png">
-  </a>
-  <a href="video/6.%20Pitch.mp4">
-    <img src="video/2016-04-09.png">
-  </a>
-  <a href="video/7.%20Fechamento.mp4">
-    <img src="video/2016-04-09.png">
-  </a>
- 
-</figcaption>
-</figure>
-
-    
-    </div>
-   
-  </div>
-               
-                </div>
-
-              </div>
+         </div>
+      </section>
+      <!-- começa movMaker -->
+      <section id="movMaker">
+         <div class="container">
+            <!--   Icon Section   -->
+            <div class="row white-text">
+               <div class="col l12 ">
+                  <h2> MOVIMENTO MAKER</h2>
+                  <div class="card">
+                     <div class="card-content">
+                        <h4>A CULTURA QUE APROXIMA O PENSAR DO FAZER JÁ ESTÁ NO SEU COTIDIANO. TECNOLOGIA ESTIMULANDO A CRIATIVIDADE E O DESEJO DE SER INVENTOR!</h4>
+                        <p>Pessoas comuns como eu e você podem construir, consertar, modificar e fabricar os mais diversos tipos de objetos e projetos com suas próprias mãos.Nos envie suas ideias! As 50 melhores receberão MakerKits e com apoio de mentores farão seus protótipos se transformarem em projetos reais. Os 3 melhores grupos viajarão para São Paulo para a Grande Final.</p>
+                        <img src="img/campanha.png">
+                     </div>
+                  </div>
+               </div>
             </div>
-
-          </div>
-        </div>
-  </section>
-  
-
-  
-  <section id="regulamento">
-        <div class="container">
-      <!--   Icon Section   -->
-        
-           <div class="row">
-            
-            <div class="col l12 m12 s12 ">
-             <h2> REGULAMENTO</h2>
-              <div class="card reg">
-                <div class="card-content">
-                    <iframe src="regulamento.html"></iframe>
-                </div>
-
-              </div>
-              <center><a class="waves-effect assistir waves-light btn" href="RegulamentoMaratonaMaker.pdf" target="_blank">DOWNLOAD</a></center>
+         </div>
+      </section>
+      <!-- começa tutorial -->
+      <section id="tutorial">
+         <div class="container">
+            <!--   Icon Section   -->
+            <div class="row white-text">
+               <div class="col l12 ">
+                  <h2> TUTORIAIS</h2>
+                  <div class="card">
+                     <div class="card-content">
+                        <p>Empoderar crianças e jovens a desenvolver ideias criativas que podem transformar sua realidade! Quer saber como? Assista aos tutoriais e saiba como participar!</p>
+                        <!-- Modal Trigger -->
+                        <center> <a class="modal-trigger assistir waves-effect waves-light btn" href="#modal2">ASSISTIR</a> </center>
+                        <!-- Modal Structure -->
+                        <div id="modal2" class="modal video" >
+                           <div class="modal-content" >
+                             <div class="row">
+               <div class="col l8 m12 s12 ">
+                              <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0fiqgbvQcAY" frameborder="0" allowfullscreen></iframe>
+                               </div>
+                              <ul class="collection" style="color:black">
+                                 <li class="collection-item"> 1 - Abertura<a href="#tutorial" class="secondary-content" data-link="https://www.youtube.com/embed/xZbXOaIZ168"><i class="material-icons">play_arrow</i></a></li>
+                                 
+                                 <li class="collection-item">2 - Internet das coisas<a href="#tutorial" class="secondary-content" data-link="https://www.youtube.com/embed/xZbXOaIZ168"><i class="material-icons">play_arrow</i></a></li>
+                                 
+                                 <li class="collection-item">3 - Ideação<a href="#tutorial" class="secondary-content" data-link="https://www.youtube.com/embed/xZbXOaIZ168"><i class="material-icons">play_arrow</i></a></li>
+                                 
+                                 <li class="collection-item">4 - Prototipação<a href="#tutorial" class="secondary-content" data-link="https://www.youtube.com/embed/xZbXOaIZ168"><i class="material-icons">play_arrow</i></a></li>
+                                 
+                                 <li class="collection-item">5 - Viabilidade<a href="#tutorial" class="secondary-content" data-link="https://www.youtube.com/embed/xZbXOaIZ168"><i class="material-icons">play_arrow</i></a></li>
+                                 
+                                 <li class="collection-item">6 - Pitch<a href="#tutorial" class="secondary-content" data-link="https://www.youtube.com/embed/xZbXOaIZ168"><i class="material-icons">play_arrow</i></a></li>
+                                 
+                                 <li class="collection-item">7 - Fechamento<a href="#tutorial" class="secondary-content" data-link="https://www.youtube.com/embed/xZbXOaIZ168"><i class="material-icons">play_arrow</i></a></li>
+                                 
+                              </ul>
+                              
+                               <!--
+                                      <a href="#tutorial" class="secondary-content" data-link="video/ideacao3.mp4"><img src="video/2016-04-09.png" style="max-width:150px"> </a>
+                                      
+                                      <a href="#tutorial" class="secondary-content" data-link="video/iot2.mp4"><img src="img/foto-bg-azul-efeito.jpg" style="max-width:150px"> </a>
+                                      
+                                      <a href="#tutorial" class="secondary-content" data-link="video/abertura1.mp4"><img src="img/image01.jpg" style="max-width:150px"> </a>
+                                 
+                                  <a href="#tutorial" class="secondary-content" data-link="video/prototipacao4.mp4"><img src="video/2016-04-09.png" style="max-width:150px"> </a>
+                                  
+                                  <a href="#tutorial" class="secondary-content" data-link="video/viabilidade5.mp4"><img src="video/2016-04-09.png" style="max-width:150px"> </a>
+                                  
+                                  <a href="#tutorial" class="secondary-content" data-link="video/pitch6.mp4"><img src="video/2016-04-09.png" style="max-width:150px"> </a>
+                                  
+                                  <a href="#tutorial" class="secondary-content" data-link="video/fechamento7.mp4"><img src="video/2016-04-09.png" style="max-width:150px"> </a>
+                                   -->
+                          
+                            </div>
+                             </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-          </div>
-        </div>
-  </section>
-
-
- <!-- =========================
-             FOOTER
-        ============================== -->
-        <footer>
-            <div class="container">
-               
-               <div class="row">
-            
-            <div class="col l12 ">
-              <!-- Copy -->
-                   <center>
-                    <div>
+         </div>
+      </section>
+       <!--<section id="regulamento">
+         <div class="container">
+            <div class="row">
+               <div class="col l12 m12 s12 ">
+                  <h2> REGULAMENTO</h2>
+                  <div class="card reg">
+                     <div class="card-content">
+                        <iframe src="regulamento.html"></iframe>
+                     </div>
+                  </div>
+                  <center><a class="waves-effect assistir waves-light btn" href="RegulamentoMaratonaMaker.pdf" target="_blank">DOWNLOAD</a></center>
+               </div>
+            </div>
+         </div>
+      </section>-->
+      <!-- =========================
+         FOOTER
+         ============================== -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col l12 ">
+                  <!-- Copy -->
+                  <center>
+                     <div>
                         <p style="float:left">Todos os direitos reservados - Copyright © 2016 <a href="http://ponte21.com" target="_blank"  style="color: rgba(0,60,113,1);">Ponte21</a></p>
-                        
                         <p class="mt">Apoio: <a href="http://www.mastertech.tech" target="_blank"  style="color: rgba(0,60,113,1);">MasterTech</a></p>
-                    </div>
-                    </center>
+                     </div>
+                  </center>
+               </div>
             </div>
-
-          </div>
-               
-            </div><!-- /End Container -->
-        </footer>
-
- 
- 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/sroll.js"></script>
-
-    <script>
-$(document).ready(function() {
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-  $('.modal-trigger').leanModal();
-});
-</script>
- 
-  </body>
+         </div>
+         <!-- /End Container -->
+      </footer>
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+      <script src="js/sroll.js"></script>
+      <script src="js/video.js"></script>
+      <script>
+         $(document).ready(function() {
+           // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+           $('.modal-trigger').leanModal();
+         });
+      </script>
+   </body>
 </html>

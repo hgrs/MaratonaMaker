@@ -15,6 +15,9 @@ body{
     font-family: "MuseoSans", sans-serif;
 }
 
+.secondary-content{
+    color: #0071c5 !important;
+}
  /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 10px;
@@ -35,46 +38,6 @@ body{
 	background: rgba(0,60,113,0.4); 
 }  
 
-
-#video_player { 
-  display: table; line-height: 0;
-  font-size: 0;
-  max-width: 90%;
-  margin: 0 auto;
-}
-#video_container { 
-  position: relative;
-}
-#video_player div, #video_player figcaption { 
-  display: table-cell;
-  vertical-align: top; 
-}
-#video_container video { 
-  position: absolute; 
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-#video_player figcaption { width: 14%; }
-#video_player figcaption a { display: block; }
-#video_player figcaption a { 
-  opacity: .5;
-  transition: 1s opacity; 
-}
-#video_player figcaption a img, figure video { 
-  width: 100%; height: auto; 
-}
-#video_player figcaption a.currentvid, #video_player figcaption a:hover, #video_player figcaption a:focus { opacity: 1; }
-@media (max-width: 700px) {
-  #video_player video, #video_player figcaption { 
-    display: table-row; 
-  }
-#video_container { padding-top: 56.25%; }
-#video_player figcaption a { 
-  display: inline-block; width: 33.33%; 
-}
-}
 
 
 @media (min-width: 800px) {
@@ -105,11 +68,12 @@ nav {
 nav ul{
     display: block;
     width: auto;
-    margin-left: 7%
+    margin-left: 15%
 }
 
 nav ul li{
     font-size: 10pt;
+    padding-bottom: 5%;
 }
 
 /* acaba nav */
@@ -142,7 +106,7 @@ nav ul li{
 
 .banner p{
     margin-bottom: 5%;
-    font-size: 13pt
+    font-size: 12pt
 }
     
     .ideia {
@@ -168,7 +132,7 @@ section#movMaker {
 
 
 #movMaker h2{
-    margin: 5% 0 7% 0;
+    margin: 10% 0 7% 0;
     font-size: 30pt;
 }
 
@@ -215,7 +179,7 @@ section#tutorial {
 
 section#makerday {
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 #makerday h2{
@@ -275,6 +239,10 @@ section#regulamento {
 
     .logoMobile{
         display: none;
+    }
+    
+    .preview{
+        display: block;
     }
     
    
@@ -446,6 +414,10 @@ section#regulamento {
     
 }
     
+     #modal2{
+        
+        margin-top: 4%
+}
 
 /* acaba regulamento */
 }
